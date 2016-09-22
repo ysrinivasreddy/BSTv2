@@ -2,7 +2,7 @@
  
 *Version 1.0.1*
 
-![alt tag](http://i.imgur.com/zDojiQw.png)
+![alt tag](http://i.imgur.com/WtETB9N.png)
  
 
 **BSTv2 Upgraded WordPress starter theme loaded with Bootstrap 3.**
