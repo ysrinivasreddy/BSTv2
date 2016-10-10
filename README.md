@@ -2,23 +2,19 @@
  
 *Version 1.0.2*
 
-<<<<<<< HEAD
-![alt tag](http://i.imgur.com/zDojiQw.png)
-=======
 ![alt tag](http://i.imgur.com/WtETB9N.png)
- 
->>>>>>> origin/master
 
 
 **BSTv2 Upgraded WordPress starter theme loaded with Bootstrap 3 With Integrated Theme Options.**
 
 >This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design with the Bootstrap Components.
-
+ 
  
 ### Features
 
  - Inbuilt Theme Options
  - fontawesome Support
+ - Theme Check Pass
  - Bootstrap Componets
     - Containers
     - Navbar
