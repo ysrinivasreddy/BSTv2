@@ -167,5 +167,5 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	}
 }
 
-register_nav_menu('navbar-left', __('Main menu (left)', 'bst'));
-register_nav_menu('navbar-right', __('Main menu (right)', 'bst'));
+register_nav_menu('navbar-main', __('Main menu', 'bstv2'));
+register_nav_menu('navbar-top', __('Top menu', 'bstv2'));

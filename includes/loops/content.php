@@ -17,19 +17,19 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
             <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
             <h4>
               <em>
-                <span class="text-muted author"><?php _e('By', 'bst'); echo " "; the_author() ?>,</span>
-                <time  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php the_time('jS F Y') ?></time>
+                <span class="text-muted author"><?php _e('By', 'bstv2'); echo " "; the_author() ?>,</span>
+                <time  class="text-muted" datetime="<?php the_time( get_option('date_format') ); ?>"><?php the_time( get_option('date_format') ); ?></time>
               </em>
             </h4>
         </header>
         <section>
-            <?php the_post_thumbnail(); ?>
-            <?php the_content( __( '&hellip; ' . __('Continue reading', 'bst' ) . ' <i class="glyphicon glyphicon-arrow-right"></i>', 'bst' ) ); ?>
+            <?php the_post_thumbnail( '', array( 'class' => 'img-responsive' ) ); ?> 
+            <?php the_excerpt(); ?> 
         </section>
         <footer>
             <p class="text-muted" style="margin-bottom: 20px;">
-                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Category', 'bst'); ?>: <?php the_category(', ') ?><br/>
-                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'bst'); ?>: <?php comments_popup_link(__('None', 'bst'), '1', '%'); ?>
+                <i class="glyphicon glyphicon-folder-open"></i>&nbsp; <?php _e('Category', 'bstv2'); ?>: <?php the_category(', ') ?><br/>
+                <i class="glyphicon glyphicon-comment"></i>&nbsp; <?php _e('Comments', 'bstv2'); ?>: <?php comments_popup_link(__('None', 'bstv2'), '1', '%'); ?>
             </p>
         </footer>
     </article>
@@ -37,8 +37,8 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 
 <?php if ( function_exists('bst_pagination') ) { bst_pagination(); } else if ( is_paged() ) { ?>
   <ul class="pagination">
-    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'bst')) ?></li>
-    <li class="newer"><?php previous_posts_link(__('Next', 'bst') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
+    <li class="older"><?php next_posts_link('<i class="glyphicon glyphicon-arrow-left"></i> ' . __('Previous', 'bstv2')) ?></li>
+    <li class="newer"><?php previous_posts_link(__('Next', 'bstv2') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
   </ul>
 <?php } ?>
 

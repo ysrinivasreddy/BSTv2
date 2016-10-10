@@ -13,7 +13,7 @@ if (! isset($content_width))
 	$content_width = 600;
 
 function bst_excerpt_readmore() {
-	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'bst') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
+	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'bstv2') . ' <i class="glyphicon glyphicon-arrow-right"></i>' . '</a></p>';
 }
 add_filter('excerpt_more', 'bst_excerpt_readmore');
 
@@ -72,8 +72,8 @@ if ( ! function_exists( 'bst_pagination' ) ) {
 			'total' => $wp_query->max_num_pages,
 			'mid_size' => 5,
 			'prev_next' => True,
-			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i> Newer'),
-			'next_text' => __('Older <i class="glyphicon glyphicon-chevron-right"></i>'),
+			'prev_text' => __('<i class="glyphicon glyphicon-chevron-left"></i>  Newer', 'bstv2'),
+			'next_text' => __('Older <i class="glyphicon glyphicon-chevron-right"></i>', 'bstv2'),
 			'type' => 'list'
 		) );
 		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );

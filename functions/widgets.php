@@ -6,9 +6,9 @@ function bst_widgets_init() {
   Sidebar (one widget area)
    */
   register_sidebar( array(
-    'name'            => __( 'Sidebar', 'bst' ),
+    'name'            => __( 'Sidebar', 'bstv2' ),
     'id'              => 'sidebar-widget-area',
-    'description'     => __( 'The sidebar widget area', 'bst' ),
+    'description'     => __( 'The sidebar widget area', 'bstv2' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
     'before_title'    => '<h4>',
@@ -19,9 +19,9 @@ function bst_widgets_init() {
   Footer (three widget areas)
    */
   register_sidebar( array(
-    'name'            => __( 'Footer', 'bst' ),
+    'name'            => __( 'Footer', 'bstv2' ),
     'id'              => 'footer-widget-area',
-    'description'     => __( 'The footer widget area', 'bst' ),
+    'description'     => __( 'The footer widget area', 'bstv2' ),
     'before_widget'   => '<div class="%1$s %2$s col-sm-4">',
     'after_widget'    => '</div>',
     'before_title'    => '<h4>',
