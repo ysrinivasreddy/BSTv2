@@ -5,6 +5,11 @@
 ![alt tag](http://i.imgur.com/WtETB9N.png)
 
 
+
+
+[Live Demo](https://bstv2-srinivasreddy.rhcloud.com/)
+
+
 **BSTv2 Upgraded WordPress starter theme loaded with Bootstrap 3 With Integrated Theme Options.**
 
 >This theme has been built for use as a starter theme and as a learning aid for people who wish to get into WordPress theme design with the Bootstrap Components.

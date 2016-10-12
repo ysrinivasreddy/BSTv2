@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html <?php language_attributes(); ?>  class="no-js">
+<html <?php html_tag_schema(); ?> <?php language_attributes(); ?>  class="no-js"> 
 <head>
 	<title><?php wp_title( '&laquo;', true, 'right' ); ?></title>
 	<meta charset="utf-8">
@@ -7,9 +7,8 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
-
+ 
+<body <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 <!--[if lt IE 8]>
 <div class="alert alert-warning">
 	You are using an <strong>outdated</strong> browser. Please upgrade your browser</a> to improve your experience.

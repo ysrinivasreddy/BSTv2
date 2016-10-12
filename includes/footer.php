@@ -1,4 +1,4 @@
-<footer class="col-xs-12 col-sm-12 col-md-12 site-footer">
+<footer id="colophon" class="col-xs-12 col-sm-12 col-md-12 site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
 	<div class="container "> 
 	<div class="row">
     <?php dynamic_sidebar('footer-widget-area'); ?>
